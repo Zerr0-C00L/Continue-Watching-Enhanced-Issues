@@ -4,11 +4,18 @@ This is the **public issue tracker** for [Continue Watching Enhanced](https://co
 
 > **Note:** This repository is for bug reports, feature requests, and support only. The source code is maintained in a private repository.
 
+## ⚠️ IMPORTANT: Local Installation Required
+
+**This addon does NOT work when installed from the hosted URL.** Remote addons cannot access your local Stremio watch data due to platform limitations.
+
+**You must run the addon locally** on the same machine as Stremio for it to function. See installation instructions on the [addon homepage](https://continue-watching-enhanced.vercel.app).
+
 ## 🐛 Report a Bug
 
 Found a bug? [Open a bug report](../../issues/new?template=bug_report.yml) with:
 - Your platform (Web, Desktop, Android TV, etc.)
 - Stremio version
+- **Confirmation that you're running the addon locally** (not from hosted URL)
 - Clear steps to reproduce
 - Expected vs. actual behavior
 
@@ -37,12 +44,15 @@ We welcome scrutiny and will answer any questions about how the addon works.
 
 ## 📦 Installation
 
-Install from: **https://continue-watching-enhanced.vercel.app**
+**The addon requires local installation.** Visit **https://continue-watching-enhanced.vercel.app** for complete setup instructions.
 
-Manual installation:
-1. Copy the manifest URL: `https://continue-watching-enhanced.vercel.app/manifest.json`
-2. Open Stremio → Addons → Community Addons
-3. Click "Install from URL" and paste the manifest URL
+**Quick steps:**
+1. Clone/download the addon code
+2. Run `npm install` then `npx stremio-addon-runner addon-local.js`
+3. In Stremio → Addons → Install from URL: `http://127.0.0.1:7000/manifest.json`
+4. Watch content for 30+ seconds to see enhancements
+
+**The hosted manifest URL does not work** because remote addons cannot access your local watch data.
 
 ## 🌟 Features
 
