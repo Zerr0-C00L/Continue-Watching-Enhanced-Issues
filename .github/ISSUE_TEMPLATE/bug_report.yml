@@ -1,0 +1,91 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior with Continue Watching Enhanced
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below to help us diagnose the issue.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform are you using?
+      options:
+        - Stremio Web
+        - Stremio Desktop (Windows)
+        - Stremio Desktop (macOS)
+        - Stremio Desktop (Linux)
+        - Stremio Android
+        - Stremio Android TV
+        - Stremio iOS
+        - Stremio Apple TV
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: stremio-version
+    attributes:
+      label: Stremio Version
+      description: What version of Stremio are you using? (Check in Settings → About)
+      placeholder: e.g., 4.4.168
+    validations:
+      required: true
+
+  - type: input
+    id: addon-version
+    attributes:
+      label: Addon Version
+      description: What version of Continue Watching Enhanced? (Check the landing page)
+      placeholder: e.g., 1.0.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear description of what's happening vs. what you expected
+      placeholder: |
+        Example: "After installing the addon, my Continue Watching cards still don't show rewatch counts or resume timestamps."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Install addon from manifest URL
+        2. Watch a show for 10 minutes
+        3. Go back to Board
+        4. Check Continue Watching row
+        5. See that no enhanced info appears
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: "Should show resume timestamp and progress indicator on the card"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the problem
+      placeholder: Drag and drop images here
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might be relevant (VPN, external player, etc.)

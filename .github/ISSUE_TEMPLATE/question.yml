@@ -1,0 +1,41 @@
+name: 💬 Question / Support
+description: Ask a question or get help with the addon
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about Continue Watching Enhanced? Ask away!
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform are you using?
+      options:
+        - Stremio Web
+        - Stremio Desktop (Windows)
+        - Stremio Desktop (macOS)
+        - Stremio Desktop (Linux)
+        - Stremio Android
+        - Stremio Android TV
+        - Stremio iOS
+        - Stremio Apple TV
+        - Other
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: "How do I..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other details that might help answer your question
+      placeholder: Screenshots, error messages, etc.

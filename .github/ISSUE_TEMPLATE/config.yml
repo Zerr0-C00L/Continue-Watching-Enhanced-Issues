@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 Addon Website
+    url: https://continue-watching-enhanced.vercel.app
+    about: Visit the addon homepage for installation and documentation
+  - name: 💬 Reddit Discussion
+    url: https://www.reddit.com/r/Stremio
+    about: Join the Stremio community for general discussions
