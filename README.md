@@ -1,21 +1,14 @@
 # Continue Watching Enhanced - Issues & Support
 
-This is the **public issue tracker** for [Continue Watching Enhanced](https://continue-watching-enhanced.vercel.app), a Stremio addon that enhances the Continue Watching row with rewatch counts, resume timestamps, and progress indicators.
+This is the **public issue tracker** for [Continue Watching Enhanced](https://continue-watching-enhanced.vercel.app), a Stremio addon that keeps finished shows visible in Continue Watching and automatically queues the next episode.
 
 > **Note:** This repository is for bug reports, feature requests, and support only. The source code is maintained in a private repository.
-
-## ⚠️ IMPORTANT: Local Installation Required
-
-**This addon does NOT work when installed from the hosted URL.** Remote addons cannot access your local Stremio watch data due to platform limitations.
-
-**You must run the addon locally** on the same machine as Stremio for it to function. See installation instructions on the [addon homepage](https://continue-watching-enhanced.vercel.app).
 
 ## 🐛 Report a Bug
 
 Found a bug? [Open a bug report](../../issues/new?template=bug_report.yml) with:
-- Your platform (Web, Desktop, Android TV, etc.)
+- Your platform (Web, Desktop, Mobile, TV)
 - Stremio version
-- **Confirmation that you're running the addon locally** (not from hosted URL)
 - Clear steps to reproduce
 - Expected vs. actual behavior
 
@@ -30,40 +23,46 @@ Have an idea? [Submit a feature request](../../issues/new?template=feature_reque
 
 Need help? [Ask a question](../../issues/new?template=question.yml) and we'll do our best to assist.
 
+## 📦 Installation
+
+Install the addon from the manifest URL:
+
+**https://continue-watching-enhanced.vercel.app/manifest.json**
+
+1. Open Stremio (any platform)
+2. Go to Addons → Community Addons
+3. Scroll down and click "Install from URL"
+4. Paste the manifest URL above
+5. Click Install
+
+Visit the [addon homepage](https://continue-watching-enhanced.vercel.app) for more details.
+
+## 🌟 What the Addon Does
+
+- **Keeps finished shows visible** - Series stay in Continue Watching after you complete an episode (normally they disappear)
+- **Auto-queues next episode** - Shows the next unwatched episode ready to play with empty progress bar
+- **Cross-platform** - Works on Web, Desktop, Mobile, and TV platforms
+
+## 📋 Important Notes
+
+- **Forward tracking only** - The addon tracks content you watch AFTER installation. It won't show data for things you watched before.
+- **Beta release** - This is an early version focused on core functionality. More features coming soon!
+
 ## 🔒 Privacy & Trust
 
 **Why is the source code private?**  
 The core addon code is kept private for now, but we're committed to transparency:
 
-- All data processing happens **locally** within your Stremio app
-- **No external servers** store or track your viewing data
-- The addon only **reads** your Stremio watched/library data—never modifies it
+- The addon operates through Stremio's standard public APIs
+- **No local watch history access** - Uses only standard addon channels
+- **No data collection** - Your viewing activity is not tracked or stored externally
 - Full privacy details are available on the [addon homepage](https://continue-watching-enhanced.vercel.app)
 
 We welcome scrutiny and will answer any questions about how the addon works.
 
-## 📦 Installation
-
-**The addon requires local installation.** Visit **https://continue-watching-enhanced.vercel.app** for complete setup instructions.
-
-**Quick steps:**
-1. Clone/download the addon code
-2. Run `npm install` then `npx stremio-addon-runner addon-local.js`
-3. In Stremio → Addons → Install from URL: `http://127.0.0.1:7000/manifest.json`
-4. Watch content for 30+ seconds to see enhancements
-
-**The hosted manifest URL does not work** because remote addons cannot access your local watch data.
-
-## 🌟 Features
-
-- **Rewatch counts**: Shows how many times you've watched something (e.g., "Billy the Kid (3×)")
-- **Resume timestamps**: "Resume at 23:45" or "Almost done — 2 min left"
-- **Badge icons**: 🔥 flame at 5+ rewatches, 👑 crown at 10+
-- **Zero extra catalogs**: Enhances the existing Continue Watching row without clutter
-
 ## ⚠️ Beta Status
 
-This addon is currently in beta. If you encounter issues, please report them here. Not all bugs may be fixed immediately—we appreciate your patience and feedback!
+This addon is currently in beta. If you encounter issues, please report them here. We appreciate your patience and feedback as we continue to improve!
 
 ## 📞 Contact
 
