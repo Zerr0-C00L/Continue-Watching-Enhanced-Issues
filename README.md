@@ -1,68 +1,56 @@
 # Continue Watching Enhanced - Issues & Support
 
-This is the **public issue tracker** for [Continue Watching Enhanced](https://continue-watching-enhanced.vercel.app), a Stremio addon that keeps finished shows visible in Continue Watching and automatically queues the next episode.
+⚠️ **PROJECT ON PAUSE**
+
+This is the **public issue tracker** for [Continue Watching Enhanced](https://continue-watching-enhanced.vercel.app), a Stremio addon project that is currently **paused indefinitely** due to technical limitations.
 
 > **Note:** This repository is for bug reports, feature requests, and support only. The source code is maintained in a private repository.
 
+## Why Paused?
+
+Remote addons cannot access your local Stremio watch history (platform privacy/security limitation). The features this addon was designed to provide - keeping finished shows visible longer, adding rewatch counts, custom sorting - all require access to your viewing data that remote addons don't have.
+
+**What was tried:**
+- ✅ Built working local version (requires running server on your machine)
+- ❌ Attempted remote catalog-based approach (no access to watch history)
+- ❌ Explored meta handler enhancements (text/badges don't render)
+
+**Current status:** The addon installs but does nothing. What you see in Continue Watching is Stremio's default behavior, not this addon.
+
 ## 🐛 Report a Bug
 
-Found a bug? [Open a bug report](../../issues/new?template=bug_report.yml) with:
-- Your platform (Web, Desktop, Mobile, TV)
-- Stremio version
-- Clear steps to reproduce
-- Expected vs. actual behavior
+If you installed the addon and experienced issues, you can still [open a bug report](../../issues/new?template=bug_report.yml). However, please note the addon is currently non-functional.
 
 ## ✨ Request a Feature
 
-Have an idea? [Submit a feature request](../../issues/new?template=feature_request.yml) describing:
-- The problem you're trying to solve
-- Your proposed solution
-- Any alternatives you've considered
+Have an idea for how this could work within Stremio's API constraints? [Submit a feature request](../../issues/new?template=feature_request.yml) - creative solutions welcome!
 
 ## 💬 Ask a Question
 
-Need help? [Ask a question](../../issues/new?template=question.yml) and we'll do our best to assist.
+Need clarification about the project status or technical details? [Ask a question](../../issues/new?template=question.yml)
 
-## 📦 Installation
+## What Was Planned
 
-Install the addon from the manifest URL:
+- Keep series visible in Continue Watching longer (they normally rotate out)
+- Add rewatch counts and badges for comfort shows
+- Custom sorting based on viewing patterns and streaks
+- Resume timestamps and progress indicators
+- Re-add finished shows you've watched many times
 
-**https://continue-watching-enhanced.vercel.app/manifest.json**
+**Note:** Basic Continue Watching functionality (showing finished episodes with next episode ready) is Stremio's default behavior - no addon needed for that.
 
-1. Open Stremio (any platform)
-2. Go to Addons → Community Addons
-3. Scroll down and click "Install from URL"
-4. Paste the manifest URL above
-5. Click Install
+## 🔮 Future
 
-Visit the [addon homepage](https://continue-watching-enhanced.vercel.app) for more details.
+If Stremio's API evolves to allow remote addons to access watch data (with user permission), or if a workaround is discovered, development may resume. For now, the technical constraints make this impossible as a hosted addon.
 
-## 🌟 What the Addon Does
-
-- **Keeps finished shows visible** - Series stay in Continue Watching after you complete an episode (normally they disappear)
-- **Auto-queues next episode** - Shows the next unwatched episode ready to play with empty progress bar
-- **Cross-platform** - Works on Web, Desktop, Mobile, and TV platforms
-
-## 📋 Important Notes
-
-- **Forward tracking only** - The addon tracks content you watch AFTER installation. It won't show data for things you watched before.
-- **Beta release** - This is an early version focused on core functionality. More features coming soon!
+**Interested in the local version?** The working code is in a private repo. If there's enough community interest, it may be open-sourced for those comfortable running local servers.
 
 ## 🔒 Privacy & Trust
 
 **Why is the source code private?**  
-The core addon code is kept private for now, but we're committed to transparency:
+The core addon code is kept private for now, but we're committed to transparency through this public issue tracker.
 
-- The addon operates through Stremio's standard public APIs
-- **No local watch history access** - Uses only standard addon channels
-- **No data collection** - Your viewing activity is not tracked or stored externally
-- Full privacy details are available on the [addon homepage](https://continue-watching-enhanced.vercel.app)
-
-We welcome scrutiny and will answer any questions about how the addon works.
-
-## ⚠️ Beta Status
-
-This addon is currently in beta. If you encounter issues, please report them here. We appreciate your patience and feedback as we continue to improve!
+When functional, this addon would operate through Stremio's standard public APIs only. No personal data collection, no external tracking.
 
 ## 📞 Contact
 
@@ -72,4 +60,4 @@ This addon is currently in beta. If you encounter issues, please report them her
 
 ---
 
-Thank you for using Continue Watching Enhanced! 🎬
+Thank you for your interest in Continue Watching Enhanced! 🎬
